@@ -30,7 +30,14 @@ SPEED_INCREASE = 0.55
 FOOD_PER_SPEEDUP = 3
 MAX_SPEED = 12
 
-HIGH_SCORE_FILE = "highscore.txt"
+# Store the high score relative to the application/project location.
+# This keeps persistence working when launched from Terminal or a packaged app.
+if getattr(sys, "frozen", False):
+    APP_DIR = Path(sys.executable).resolve().parent
+else:
+    APP_DIR = Path(__file__).resolve().parent.parent
+
+HIGH_SCORE_FILE = APP_DIR / "highscore.txt"
 
 # ============================================================
 # COLORS
