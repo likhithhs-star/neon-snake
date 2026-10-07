@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game-shell">
+    <header class="hud">
+      <div>
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div>
+        <span>BEST</span>
+        <strong id="best">0</strong>
+      </div>
+
+      <div>
+        <span>LEVEL</span>
+        <strong id="level">1</strong>
+      </div>
+
+      <div>
+        <span>SPEED</span>
+        <strong id="speed">4.5x</strong>
+      </div>
+    </header>
+
+    <section class="game-container">
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h1>NEON SNAKE</h1>
+        <p id="message">Press any arrow key or WASD to start</p>
+        <button id="startButton">START GAME</button>
+      </div>
+    </section>
+
+    <footer>
+      <span>WASD / ARROWS · MOVE</span>
+      <span>SPACE · PAUSE</span>
+      <span>R · RESTART</span>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
