@@ -4,3 +4,8 @@ __pycache__/
 .DS_Store
 
 src/*_backup.py
+
+# PyInstaller
+build/
+dist/
+*.spec
