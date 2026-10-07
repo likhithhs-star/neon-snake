@@ -9,3 +9,7 @@ src/*_backup.py
 build/
 dist/
 *.spec
+
+# Local release package
+release_package/
+Neon-Snake-Hackathon.zip
